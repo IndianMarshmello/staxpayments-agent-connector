@@ -12,8 +12,8 @@ importers:
         specifier: ^1.29.0
         version: 1.31.0(zod@4.6.5)
       ky:
-        specifier: ^1.14.0
-        version: 1.14.3
+        specifier: ^2.1.0
+        version: 2.1.0
       zod:
         specifier: ^4.3.6
         version: 4.6.5
@@ -431,9 +431,9 @@ packages:
   json-schema-typed@8.0.2:
     resolution: {integrity: sha512-fQhoXdcvc3V28x7C7BMs4P5+kNlgUURe2jmUT1T//oBRMDrqy1QPelJimwZGo7Hg9VPV3EQV5Bnq4hbFy2vetA==}
 
-  ky@1.14.3:
-    resolution: {integrity: sha512-9zy9lkjac+TR1c2tG+mkNSVlyOpInnWdSMiue4F+kq8TwJSgv6o8jhLRg8Ho6SnZ9wOYUq/yozts9qQCfk7bIw==}
-    engines: {node: '>=18'}
+  ky@2.1.0:
+    resolution: {integrity: sha512-nIKwelw+7qVqKOlX4Eht6GXfEXlDHcdIjyLWV3s119kYt5s+70ayTnYS+0fRNmtgGRRAfqdeWQbh8YizqkS0ng==}
+    engines: {node: '>=22'}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -948,7 +948,7 @@ snapshots:
 
   json-schema-typed@8.0.2: {}
 
-  ky@1.14.3: {}
+  ky@2.1.0: {}
 
   math-intrinsics@1.1.0: {}
 
