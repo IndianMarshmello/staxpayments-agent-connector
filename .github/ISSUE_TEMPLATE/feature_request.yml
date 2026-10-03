@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an addition or change
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One idea per request, please. Security issues don't belong here; see [SECURITY.md](https://github.com/IndianMarshmello/staxpayments-agent-connector/blob/main/SECURITY.md).
+
+        Anything that moves money gets a safety discussion before implementation. Sketching the approval and recovery story up front helps your proposal.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the task you can't do well today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: What should the connector do? For new tools, sketch the inputs and outputs.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Other tools, manual steps, or workarounds you've tried.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This is not a security issue, and it doesn't require sharing my API keys or account details.
+          required: true
