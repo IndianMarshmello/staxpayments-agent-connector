@@ -1,0 +1,84 @@
+name: Bug report
+description: Report incorrect behavior in the connector
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        **Never paste API keys, customer data, transaction details, or real account aliases into this form.** Redact before submitting. Security problems don't belong here; use a private advisory as described in [SECURITY.md](https://github.com/IndianMarshmello/staxpayments-agent-connector/blob/main/SECURITY.md).
+
+        Before you start: the README's configuration reference and date-filter notes explain behavior that's easy to mistake for a bug, including `FILTER_NOT_APPLIED` errors.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what did the connector do wrong?
+      placeholder: I asked my client to list transactions for October and...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Connector version or commit
+      description: From package.json, or the git commit you built from.
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: AI client and version
+      placeholder: Claude Desktop, Cursor, ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS and Bun version
+      placeholder: macOS 15, Bun 1.3.14
+    validations:
+      required: true
+  - type: dropdown
+    id: setup
+    attributes:
+      label: Setup
+      description: How the connector is configured. Don't share account aliases.
+      options:
+        - Single account (STAX_API_KEY), writes disabled
+        - Single account (STAX_API_KEY), writes enabled
+        - Multiple accounts (STAX_ACCOUNTS), writes disabled
+        - Multiple accounts (STAX_ACCOUNTS), writes enabled
+    validations:
+      required: true
+  - type: input
+    id: tools
+    attributes:
+      label: Tools involved
+      description: Which MCP tools were called, if you know.
+      placeholder: stax_list_transactions
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Error messages or MCP responses, with secrets and customer data removed.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: redaction
+    attributes:
+      label: Redaction check
+      options:
+        - label: This report contains no API keys, customer data, transaction details, or real account aliases.
+          required: true

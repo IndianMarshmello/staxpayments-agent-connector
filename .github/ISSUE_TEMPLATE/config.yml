@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/IndianMarshmello/staxpayments-agent-connector/security/advisories/new
+    about: Report vulnerabilities privately through GitHub Security Advisories. Never file them as public issues.
+  - name: Stax API and merchant account help
+    url: https://docs.staxpayments.com/
+    about: Questions about the Stax API, API keys, billing, or your merchant account belong with Stax support, not this connector.
