@@ -58,7 +58,7 @@ export class StaxClient {
 		baseUrl = "https://apiprod.fattlabs.com",
 	) {
 		this.http = ky.create({
-			prefixUrl: baseUrl,
+			prefix: baseUrl,
 			headers: {
 				Authorization: `Bearer ${config.apiKey}`,
 				Accept: "application/json",
