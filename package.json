@@ -27,7 +27,7 @@
 		"check": "pnpm typecheck && pnpm lint && pnpm test && pnpm build"
 	},
 	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.32.1",
+		"@modelcontextprotocol/sdk": "^1.32.2",
 		"ky": "^2.2.0",
 		"zod": "^4.6.7"
 	},
